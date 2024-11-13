@@ -4,11 +4,10 @@ html, body {
 	padding: 0;
 	height: 100%;
 	font-family: "Poppins", sans-serif;
-	color: #1a1a1a;
+	color: #000000;
 	line-height: 1.6;
 	overflow-x: hidden;
   }
-  
   h1 {
 	font-size: 40px !important;
 	font-weight: 800;
