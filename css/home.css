@@ -88,6 +88,14 @@ html, body {
   .navbar-brand:hover, .nav-link:hover {
 	color: #1113b0 !important; /* Color de enlace al pasar el cursor */
   }
+  /* Logo de la barra de navegación */
+.logo {
+	width: 50px; /* Ajusta el tamaño según necesites */
+	height: auto;
+	margin-right: 15px;
+	vertical-align: middle;
+  }
+  
   
   /* Estilos en dispositivos móviles */
   @media (min-width: 280px) and (max-width: 480px) {
