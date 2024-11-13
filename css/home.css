@@ -58,7 +58,7 @@ html, body {
 	display: inline-block;
 	margin-top: 20px;
 	padding: 10px 20px;
-	background-color: #6c5ce7; /* Color de fondo del botón */
+	background-color: #1113b0; /* Color de fondo del botón */
 	color: #fff;
 	font-weight: bold;
 	text-decoration: none;
@@ -67,7 +67,7 @@ html, body {
   }
   
   .cont a:hover {
-	background-color: #4e3db5; /* Color al pasar el cursor */
+	background-color: #1113b0; /* Color al pasar el cursor */
   }
   
   /* Estilos de la barra de navegación */
@@ -79,14 +79,14 @@ html, body {
   }
   
   .navbar-brand, .nav-link {
-	color: #1a1a1a !important;
+	color: #000000 !important;
 	font-weight: bold;
 	font-size: 16px;
 	text-transform: uppercase;
   }
   
   .navbar-brand:hover, .nav-link:hover {
-	color: #6c5ce7 !important; /* Color de enlace al pasar el cursor */
+	color: #1113b0 !important; /* Color de enlace al pasar el cursor */
   }
   
   /* Estilos en dispositivos móviles */
