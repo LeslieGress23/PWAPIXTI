@@ -12,14 +12,21 @@
   <style>
     /* Full gray background */
     body {
-      background-color: #f1f6f7;
+      background-color: #d5dbdf;
       color: #000000; /* Cambia el color de texto a negro */
       margin: 0;
     }
-  
+    /* White background for menu */
+    .navbar {
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
+    }
+    .navbar-brand, .nav-link {
+      color: #000000 !important; /* Color de texto negro para el menú */
+    }
     /* Dark gray background for main content */
     .color-gris {
-      background-color: #f1f6f7;
+      background-color: #d5dbdf;
       color: #000000; /* Cambia el color de texto a negro */
       padding: 20px;
       border-radius: 8px;
@@ -37,11 +44,20 @@
       font-size: 40px;
       color: #000000; /* Color de iconos en negro */
     }
+    /* Title of the section */
     .section-title {
-      font-size: 30px;
+      font-size: 24px;
       font-weight: bold;
       margin-bottom: 10px;
-      color: #040404; /* Cambia el color del título a naranja */
+      color: #000000; /* Cambia el color del título a naranja */
+    }
+    /* Custom style for the line below the title */
+    .title-line {
+      width: 5%; /* Ajusta el ancho de la línea según sea necesario */
+      margin: 0 auto; /* Centra la línea */
+      border-top: 3px solid #1113b0; /* Cambia el color de la línea a naranja */
+      margin-top: 5px;
+      margin-bottom: 10px;
     }
     /* Titles for each section (in bold) */
     .text-center h5 {
@@ -77,6 +93,7 @@
   <!-- Main Content -->
   <div class="container mt-4">
     <h2 class="text-center section-title">Generalidades de la empresa</h2>
+    <hr class="title-line"> <!-- Línea decorativa debajo del título -->
     
     <div class="row mt-4">
       <!-- Left Image Section -->
