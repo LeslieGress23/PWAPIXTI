@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PIXTI</title>
+
+  <!-- PWA -->
+  <link rel="manifest" href="./manifest.json"> 
+  <meta name="theme-color" content="#2F3BA2">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="./pwa/images/icons/icon-512x512.png">
+  
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+<!-- Menú de navegación -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <img src="imgs/PIXTI.jpeg" alt="Logo" class="logo" style="width: 50px; height: 50px;">
+    <a class="navbar-brand" href="index.html">Inicio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="generalidades.html">Generalidades de la empresa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./servicios.html">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- Footer -->
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <span class="text-muted">Canal de Youtube - WebDeveloper.</span>
+    <a href="https://www.youtube.com/channel/UCodSpPp_r_QnYIQYCjlyVGA" target="_blank">Visitar</a>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-3.6.0.js"></script>
+<script src="regist_serviceWorker.js"></script>
+<script>
+  $(function(){
+    setTimeout(() => $(".cargando").hide(), 50);
+  });
+</script>
+</body>
+</html>
