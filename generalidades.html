@@ -1,146 +1,123 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <title>PIXTI</title>
+  <link type="text/css" rel="shortcut icon" href="imgs/PIXTI.jpeg"/>
+  <link rel="stylesheet" href="css/home.css">
+
+  <style>
+    /* Full gray background */
+    body {
+      background-color: #f1f6f7;
+      color: #000000; /* Cambia el color de texto a negro */
+      margin: 0;
+    }
+  
+    /* Dark gray background for main content */
+    .color-gris {
+      background-color: #f1f6f7;
+      color: #000000; /* Cambia el color de texto a negro */
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .text-center h5, .text-center p {
+      color: #000000; /* Cambia el color del texto en las secciones a negro */
+    }
+    /* Image styles */
+    .img-fluid {
+      max-width: 100%;
+      height: auto;
+    }
+    /* Align icons and text */
+    .icon {
+      font-size: 40px;
+      color: #000000; /* Color de iconos en negro */
+    }
+    .section-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #000000; /* Título de la sección en negro */
+    }
+    /* Container for sections */
+    .section {
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <img src="imgs/PIXTI.jpeg" alt="Logo" class="logo me-2">
+    <a class="navbar-brand" href="index.html">Inicio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Conócenos</a></li>
+        <li class="nav-item"><a class="nav-link active" href="generalidades.html">Generalidades de la empresa</a></li>
+        <li class="nav-item"><a class="nav-link active" href="./servicios.html">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Productos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="color-gris">
+  <!-- Main Content -->
+  <div class="container mt-4">
+    <h2 class="text-center section-title">Generalidades de la empresa</h2>
     
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-    <meta name="description" content="Web Developer es un canal de Youtube que nace con el unico proposito de ayudar a la comunidad que esta en modo aprender de la mejor manera." />
-    <meta name="keywords" content="Canal de Youtube Web Developer Urian Viera"/>
-    <meta name="author" content="Web Developer" />
-    <meta name="copyright" content="Web Developer" />
-    <meta name="language" content="es-CO"/>
-
-    <title>PIXTI</title>
-    <link type="text/css" rel="shortcut icon" href="imgs/PIXTI.jpeg"/>
-    <link rel="stylesheet" href="css/home.css">
-
-
-    <!--PWA-->
-    <link rel="manifest" href="./manifest.json"> 
-    <!---PWA--->
-
-    <!----METAS DE PWA-->
-    <meta name="theme-color" content="#2F3BA2">
-    <meta name="MobileOptimized" content="width">
-    <meta name="HandheldFriendly" content="true">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="shortcut icon" type="image/png" href="./pwa/images/icons/icon-512x512.png">
-    <link rel="apple-touch-icon" href="./pwa/images/icons/icon-512x512.png">
-    <link rel="apple-touch-startup-image" href="./pwa/images/icons/icon-512x512.png">
-
-    <link rel="apple-touch-icon" href="./pwa/images/icons/icon-72x72.png" />
-    <link rel="apple-touch-icon" href="./pwa/images/icons/icon-96x96.png" />
-    <link rel="apple-touch-icon" href="./pwa/images/icons/icon-128x128.png" />
-    <link rel="apple-touch-icon" href="./pwa/images/icons/icon-144x144.png" />
-    <link rel="apple-touch-icon" href="./pwa/images/icons/icon-152x152.png" />
-    <link rel="apple-touch-icon" href="./pwa/images/icons/icon-192x192.png" />
-    <link rel="apple-touch-icon" href="./pwa/images/icons/icon-384x384.png" />
-    <link rel="apple-touch-icon" href="./pwa/images/icons/icon-512x512.png" />
-    <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
-
-  </head>
-  <body>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #fff !important">
-    <div class="container-fluid">
-      <img src="imgs/PIXTI.jpeg" alt="Logo" class="logo">
-      <a class="navbar-brand" href="index.html">Inicio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" rel="noopener" aria-current="page" href="#">Conócenos</a>
-          </li>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" rel="noopener" aria-current="page" href="generalidades.html">Generalidades de la empresa</a>
-              </li>
-          <li class="nav-item">
-            <a class="nav-link active" rel="noopener" aria-current="page" href="./servicios.html">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" rel="noopener" aria-current="page" href="#">Productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" rel="noopener" href="#">Contacto</a>
-          </li>
-        </ul>
+    <div class="row mt-4">
+      <!-- Left Image Section -->
+      <div class="col-md-6">
+        <img src="imgs/generalidades.jpg" alt="Generalidades" class="img-fluid">
       </div>
-    </div>
-  </nav>
-<!-- Main Content -->
-    <div class="container mt-4">
-      <h2 class="text-center">Generalidades de la empresa</h2>
-      
-      <div class="row">
-        <!-- Left Image Section -->
-        <div class="col-md-6">
-            <img src="imgs/generalidades.jpg" alt="Mission">
-            <!-- Placeholder for large image -->
+
+      <!-- Right Text Section -->
+      <div class="col-md-6">
+        <div class="row">
+          <!-- Mission -->
+          <div class="col-md-6 text-center section">
+            <span class="icon">📌</span>
+            <h5>Misión</h5>
+            <p>PIXTI es una empresa de desarrollo de software especializada en servicios TI para impulsar la innovación digital con aplicaciones y sitios web personalizados.</p>
+          </div>
+          
+          <!-- Vision -->
+          <div class="col-md-6 text-center section">
+            <span class="icon">👁️</span>
+            <h5>Visión</h5>
+            <p>Buscamos liderar en tecnología con enfoque en innovaciones, abordando desafíos del mercado, y proporcionando soluciones que optimizan negocios.</p>
           </div>
         </div>
 
-        <!-- Right Text Section -->
-        <div class="col-md-6">
-          <div class="container-content">
-            <!-- Mission -->
-            <div class="content">
-              <img src="imgs/mission.jpg" alt="Mission">
-              <h5>Misión</h5>
-              <p>PIXTI es una empresa de desarrollo de software especializada en servicios TI para impulsar la innovación digital con aplicaciones y sitios web personalizados. Nos esforzamos por optimizar procesos, mejorar la eficiencia y promover el crecimiento sostenible de nuestros clientes a través de soluciones innovadoras.</p>
-            </div>
-            <!-- Vision -->
-            <div class="content">
-              <img src="imgs/vision.png" alt="Vision">
-              <h5>Visión</h5>
-              <p>Buscamos liderar en tecnología con enfoque en innovaciones, abordando desafíos del mercado. Nos esforzamos por ser el socio tecnológico preferido, proporcionando soluciones innovadoras que optimizan negocios. Comprometidos con la excelencia y la eficiencia, contribuimos al progreso sostenible de comunidades y del estado.</p>
-            </div>
+        <div class="row mt-3">
+          <!-- Values -->
+          <div class="col-md-6 text-center section">
+            <span class="icon">💎</span>
+            <h5>Valores</h5>
+            <p>Integridad, respeto, responsabilidad y servicio de excelencia.</p>
           </div>
-
-          <div class="container-content">
-            <!-- Values -->
-            <div class="content">
-              <img src="imgs/valores.png" alt="Values">
-              <h5>Valores</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <!-- Motto -->
-            <div class="content">
-              <img src="imgs/lema.webp" alt="Motto">
-              <h5>Lema</h5>
-              <p>"Transformando Desafíos en soluciones digitales"</p>
-            </div>
+          
+          <!-- Motto -->
+          <div class="col-md-6 text-center section">
+            <span class="icon">🏆</span>
+            <h5>Lema</h5>
+            <p>"Transformando Desafíos en soluciones digitales"</p>
           </div>
         </div>
       </div>
     </div>
-<!--precarga de la pagina-->
-<div class="cargando">
-    <div class="loader-outter"></div>
-    <div class="loader-inner"></div>
+  </div>
 </div>
 
-
 <script src="./js/bootstrap.bundle.min.js"></script>
-<script src="./js/jquery-3.6.0.js"></script>
-<script src="./regist_serviceWorker.js"></script> 
-<script>
-  $(function(){
-//Precarga de la pagina se ejecuta solo una vez
-setTimeout(
-    ()=>{
-        $(".cargando").hide(); 
-     } , 50
- );
- });
-</script>
 </body>
 </html>
-
