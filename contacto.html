@@ -4,77 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
     <style>
-        /* Estilos para el menú */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
         }
-        
-        nav {
-            background-color: #333;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-        
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-        
-        nav ul li {
-            display: inline;
-            margin-right: 15px;
-        }
-        
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
 
-        /* Estilos para el formulario */
         .container {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            min-height: 90vh;
+            width: 100%;
             padding: 20px;
+            max-width: 1200px;
+            margin: auto;
         }
-        
+
         .contact-form {
             background-color: #fff;
             padding: 20px;
-            width: 50%;
+            width: 45%;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            margin-right: 20px;
         }
-        
+
         .contact-form h2 {
             text-align: center;
             color: #333;
         }
-        
+
         .form-group {
             margin-bottom: 15px;
         }
-        
+
         .form-group label {
             display: block;
             color: #333;
             font-weight: bold;
         }
-        
+
         .form-group input,
         .form-group textarea {
             width: 100%;
@@ -82,14 +54,14 @@
             border: 1px solid #ddd;
             border-radius: 5px;
         }
-        
+
         .form-group textarea {
             resize: vertical;
             height: 100px;
         }
-        
+
         .form-group button {
-            width: 10%;
+            width: 100%;
             padding: 10px;
             background-color: #2a01e0;
             color: white;
@@ -98,81 +70,80 @@
             font-size: 16px;
             cursor: pointer;
         }
-        
+
         .form-group button:hover {
             background-color: #555;
         }
-        
-        /* Imagen decorativa a la derecha */
+
         .contact-image {
-            width: 40%;
+            width: 50%;
         }
-        
-        .contact-container {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        
+
         .contact-image img {
             width: 100%;
+            height: auto;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Ajustes del menú */
+        nav.navbar {
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
 
     <!-- Menú de navegación -->
-    <nav>
-        <ul>
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#about">Nosotros</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <img src="imgs/PIXTI.jpeg" alt="Logo" class="logo me-2">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#">Conócenos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="generalidades.html">Generalidades de la empresa</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <!-- Contenedor principal del formulario e imagen -->
+    <!-- Contenedor principal -->
     <div class="container">
-        <div class="contact-container">
-            
-            <!-- Formulario de contacto -->
-            <div class="contact-form">
-                <h2>Contáctanos</h2>
+        <!-- Formulario de contacto -->
+        <div class="contact-form">
+            <h2>Contáctanos</h2>
+            <form action="procesar_contacto.php" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu Nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Email:</label>
+                    <input type="email" id="correo" name="correo" placeholder="Escribe tu Correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aqui..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
 
-                <form action="procesar_contacto.php" method="post">
-                    <div class="form-group">
-                        <label for="name">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu Nombre" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                       <input type="email" id="correo" name="correo" placeholder="Escribe tu Correo" required>
-                      
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Mensaje:</label>
-                      <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aqui..." required></textarea>
-
-                    </div>
-                    <div class="form-group">
-                   <center>   <button type="submit">Enviar</button></center>  
-                    </div>
-                </form>
-            </div>
-
-            <!-- Imagen decorativa -->
-            <div class="contact-image">
-                <img src="imgs/contacto .jpg" alt="Imagen de contacto">
-            </div>
-
+        <!-- Imagen decorativa -->
+        <div class="contact-image">
+            <img src="imgs/contacto .jpg" alt="Imagen de contacto">
         </div>
     </div>
 
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-       
-    
