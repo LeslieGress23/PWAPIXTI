@@ -1,11 +1,12 @@
-/* Estilos generales */
-body, html {
+/* Estilos básicos */
+html, body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
 	font-family: "Poppins", sans-serif;
 	color: #1a1a1a;
 	line-height: 1.6;
+	overflow-x: hidden;
   }
   
   h1 {
@@ -14,26 +15,32 @@ body, html {
 	font-family: "M PLUS Rounded 1c", sans-serif;
   }
   
+  /* Caja contenedora de la imagen */
   .caja { 
 	position: relative;
 	display: inline-block;
+	width: 100vw;
+	overflow: hidden;
   }
   
+  /* Imagen de fondo */
   .resp_img {
 	height: 100vh;
-	width: 100%;
+	width: 100vw;
 	background-size: cover;
 	background-position: center;
 	text-align: center;
 	filter: brightness(50%);
+	position: relative;
   }
   
+  /* Contenedor de texto sobre la imagen */
   .cont {
 	width: 60%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	transform: translate(-50%, -50%);
 	color: #fff;
 	border: 3px solid #fff;
 	padding: 20px 10px;
@@ -46,61 +53,182 @@ body, html {
 	font-family: "M PLUS Rounded 1c", sans-serif;
   }
   
+  /* Botón "Conócenos" */
+  .cont a {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px 20px;
+	background-color: #6c5ce7; /* Color de fondo del botón */
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+  }
+  
+  .cont a:hover {
+	background-color: #4e3db5; /* Color al pasar el cursor */
+  }
+  
+  /* Estilos de la barra de navegación */
+  .navbar {
+	background-color: #fff;
+	font-family: "Poppins", sans-serif;
+	width: 100%;
+	box-sizing: border-box;
+  }
+  
+  .navbar-brand, .nav-link {
+	color: #1a1a1a !important;
+	font-weight: bold;
+	font-size: 16px;
+	text-transform: uppercase;
+  }
+  
+  .navbar-brand:hover, .nav-link:hover {
+	color: #6c5ce7 !important; /* Color de enlace al pasar el cursor */
+  }
+  
+  /* Estilos en dispositivos móviles */
   @media (min-width: 280px) and (max-width: 480px) {
 	.cont {
 	  width: 90%;
 	}
+	
 	.cont h1 {
 	  font-size: 20px !important;
 	  font-weight: 700;
 	}
   }
   
-  /* Estilos del botón "Conócenos" */
-  .cont a {
-	font-size: 18px;
-	font-weight: 600;
-	color: #fff;
-	background-color: #2F1C6A;
-	padding: 10px 20px;
-	text-decoration: none;
-	border-radius: 5px;
-	transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .cont a:hover {
-	background-color: #1a1a1a;
-	color: #fafafa;
-  }
-  
-  /* Estilos del menú de navegación */
-  .navbar {
-	background-color: #fff;
-	font-family: "Poppins", sans-serif;
-  }
-  
-  .navbar-nav .nav-link {
-	font-size: 16px;
-	color: #1a1a1a !important;
-	font-weight: 500;
-	transition: color 0.3s ease;
-  }
-  
-  .navbar-brand {
-	font-size: 20px;
-	font-weight: 600;
-	color: #1a1a1a !important;
-  }
-  
-  .navbar-nav .nav-link:hover {
+  /* Otros estilos de la página */
+  .nameperfil {
 	color: #2F1C6A !important;
   }
   
-  .navbar-toggler {
-	border-color: #1a1a1a;
+  em {
+	font-size: 30px;
   }
   
-  .navbar-toggler-icon {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%231a1a1a' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  .logoYoutube {
+	display: block;
+	margin: 0 auto;
+	width: 120px;
+  }
+  
+  .logoYoutube:hover {
+	cursor: pointer;
+	animation-name: efectoHover;
+	animation-duration: 0.5s;
+  }
+  
+  @keyframes efectoHover {
+	50% {
+	  transform: scale(1.05);
+	}
+  }
+  
+  #perfil {
+	padding: 20px;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+  }
+  
+  #recuerdo {
+	background-color: #eeeeee50;
+	border-radius: 10px;
+	padding: 10px 20px;
+  }
+  
+  #canalYoutube {
+	background-color: #FAFBFF;
+	box-shadow: 0px 0px 7px 3px rgb(0 0 0 / 15%);
+	border-radius: 10px;
+	padding: 10px 20px;
+  }
+  
+  /* Estilos de precarga */
+  .cargando {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #f9f9f9;
+	z-index: 999999;
+  }
+  
+  .cargando .loader-inner {
+	position: absolute;
+	border: 2px solid #f12020;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	left: calc(50% - 20px);
+	top: calc(50% - 20px);
+	border-right: 0;
+	border-top-color: transparent;
+	-webkit-animation: loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
+	animation: loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
+  }
+  
+  @-webkit-keyframes loader-outter {
+	0% {
+	  -webkit-transform: rotate(0deg);
+	  transform: rotate(0deg);
+	}
+	100% {
+	  -webkit-transform: rotate(360deg);
+	  transform: rotate(360deg);
+	}
+  }
+  
+  @keyframes loader-outter {
+	0% {
+	  -webkit-transform: rotate(0deg);
+	  transform: rotate(0deg);
+	}
+	100% {
+	  -webkit-transform: rotate(360deg);
+	  transform: rotate(360deg);
+	}
+  }
+  
+  @-webkit-keyframes loader-inner {
+	0% {
+	  -webkit-transform: rotate(0deg);
+	  transform: rotate(0deg);
+	}
+	100% {
+	  -webkit-transform: rotate(-360deg);
+	  transform: rotate(-360deg);
+	}
+  }
+  
+  @keyframes loader-inner {
+	0% {
+	  -webkit-transform: rotate(0deg);
+	  transform: rotate(0deg);
+	}
+	100% {
+	  -webkit-transform: rotate(-360deg);
+	  transform: rotate(-360deg);
+	}
+  }
+  
+  /* Estilos del scroll */
+  ::-webkit-scrollbar {
+	width: 8px;
+	height: 2px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+	border: 1px solid #666666;
+	border-radius: 3px;
+	background: #666666;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+	background: grey;
   }
   
