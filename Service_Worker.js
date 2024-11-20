@@ -11,6 +11,7 @@ const urlsToCache = [
   './pwa/images/icons/icon-72x72.png'
 ];
 
+//INSTALACIÓN DEL SW
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(CACHE_NAME)
@@ -22,6 +23,7 @@ self.addEventListener('install', e => {
   );
 });
 
+//ACTIVACIÓN DEL SW
 self.addEventListener('activate', e => {
   const cacheWhitelist = [CACHE_NAME];
   e.waitUntil(
@@ -39,6 +41,7 @@ self.addEventListener('activate', e => {
   );
 });
 
+//ESCUCHA DE EVENTOS
 self.addEventListener('fetch', e => {
   e.respondWith(
     fetch(e.request)
