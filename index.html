@@ -44,7 +44,8 @@
 
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #fff !important">
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <img src="imgs/PIXTI.jpeg" alt="Logo" class="logo">
         <a class="navbar-brand" href="index.html">Inicio</a>
@@ -53,23 +54,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" rel="noopener" aria-current="page" href="conocenos.html">Conócenos</a>
-            </li>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" rel="noopener" aria-current="page" href="generalidades.html">Acerca de ...</a>
-                </li>
-            <li class="nav-item">
-              <a class="nav-link active" rel="noopener" aria-current="page" href="./servicios.html">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" rel="noopener" aria-current="page" href="./productos.html">Productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" rel="noopener" href="contacto.html">Contacto</a>
-            </li>
+            <li class="nav-item"><a class="nav-link active" href="conocenos.html">Conócenos</a></li>
+            <li class="nav-item"><a class="nav-link active" href="generalidades.html">Generalidades de la empresa</a></li>
+            <li class="nav-item"><a class="nav-link active" href="./servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link active" href="./productos.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
           </ul>
         </div>
       </div>
@@ -92,56 +81,47 @@
     </div>
 
   
-<div class="color-gris">
-  <!-- Main Content -->
-  <div class="container mt-4">
-    <h2 class="generalidades-title">Generalidades de la empresa</h2>
-    <div class="title-line"></div>
-    
-    <div class="row mt-4">
-      <!-- Left Image Section -->
-      <div class="col-md-6">
-        <img src="imgs/generalidades.jpg" alt="Generalidades" class="img-fluid">
-      </div>
-
-      <!-- Right Text Section -->
-      <div class="col-md-6">
-        <div class="row">
-          <!-- Mission -->
-          <div class="col-md-6 text-center section">
-            <span class="icon">📌</span>
-            <h5>Misión</h5>
-            <p>PIXTI es una empresa de desarrollo de software especializada en servicios TI para impulsar la innovación digital con aplicaciones y sitios web personalizados.</p>
-          </div>
-          
-          <!-- Vision -->
-          <div class="col-md-6 text-center section">
-            <span class="icon">👁️</span>
-            <h5>Visión</h5>
-            <p>Buscamos liderar en tecnología con enfoque en innovaciones, abordando desafíos del mercado, y proporcionando soluciones que optimizan negocios.</p>
-          </div>
+    <!-- Contenido principal -->
+    <div class="container mt-4 generalidades">
+      <h2 class="generalidades-title">Acerca de ...</h2>
+      <div class="row mt-4">
+        <!-- Imagen grande a la izquierda -->
+        <div class="col-md-6">
+          <img src="imgs/generalidades.jpg" alt="Generalidades" class="img-fluid">
         </div>
-
-        <div class="row mt-3">
-          <!-- Values -->
-          <div class="col-md-6 text-center section">
-            <span class="icon">💎</span>
-            <h5>Valores</h5>
-            <p>Confiabilidad, innovación, seguridad, integridad, calidad y responsabilidad.
-                </p>
+        <!-- Sección derecha con bloques -->
+        <div class="col-md-6">
+          <div class="row">
+            <!-- Bloque de Misión -->
+            <div class="col-6 text-center section">
+              <img src="imgs/mision.png" class="icon-img" alt="Misión">
+              <h5>Misión</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+            </div>
+            <!-- Bloque de Visión -->
+            <div class="col-6 text-center section">
+              <img src="imgs/vision.png" class="icon-img" alt="Visión">
+              <h5>Visión</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+            </div>
           </div>
-          
-          <!-- Motto -->
-          <div class="col-md-6 text-center section">
-            <span class="icon">🏆</span>
-            <h5>Lema</h5>
-            <p>"Transformando Desafíos en soluciones digitales"</p>
+          <div class="row mt-3">
+            <!-- Bloque de Valores -->
+            <div class="col-6 text-center section">
+              <img src="imgs/valores.png" class="icon-img" alt="Valores">
+              <h5>Valores</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+            </div>
+            <!-- Bloque de Lema -->
+            <div class="col-6 text-center section">
+              <img src="imgs/lema.png" class="icon-img" alt="Lema">
+              <h5>Lema</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/jquery-3.6.0.js"></script>
