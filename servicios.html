@@ -44,6 +44,96 @@
   <link rel="apple-touch-icon" href="./pwa/images/icons/icon-512x512.png" />
   <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
 
+
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .contact-form {
+        background-color: #fff;
+        padding: 20px;
+        width: 45%;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    .contact-form h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        display: block;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .form-group textarea {
+        resize: vertical;
+        height: 100px;
+    }
+
+    .form-group button {
+        width: 100%;
+        padding: 10px;
+        background-color: #2a01e0;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .form-group button:hover {
+        background-color: #555;
+    }
+
+    .contact-image {
+        width: 50%;
+    }
+
+    .contact-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Ajustes del menú */
+    nav.navbar {
+        margin-bottom: 20px;
+    }
+</style>
+
+
+
+
 </head>
 
 <body>
@@ -63,10 +153,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" rel="noopener" aria-current="page" href="generalidades.html">Acerca de ...</a>
+                <a class="nav-link active" rel="noopener" aria-current="page" href="generalidades.html">Acerca de...</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" rel="noopener" aria-current="page" href="./servicios.html">Servicios</a>
+                <a class="nav-link active" rel="noopener" aria-current="page" href="#servicios">Servicios</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" rel="noopener" aria-current="page" href="./productos.html">Productos</a>
@@ -85,19 +175,15 @@
     <div class="loader-inner"></div>
   </div>
 
-
-  <div class="container mt-5 mb-5">
-    <div class="row mb-5">
-      <div class="col-md-12">
+<section>
+  <div>
         <h1 class="text-center mt-5 mb-5">NUESTROS SERVICIOS</h1>
-
-      </div>
     </div>
 
 
-    <div class="row mb-5 text-center p-3" style="border-radius: 10px; background-color: #f1f1f1;">
-      <div class="col-md-12">
-        <h1 style="color: #555;">Desarrollo de Software y Soluciones Personalizadas</h1>
+    <div class="container">
+      <div class="contact-form">
+        <h2>Desarrollo de Software y Soluciones Personalizadas</h2>
         <p>
           En <strong>PIXTI</strong>, creemos que cada idea tiene el potencial de transformarse en una solución poderosa.
           Nuestro objetivo es dar vida a tus proyectos mediante tecnología personalizada que no sólo funciona, sino que
@@ -119,9 +205,9 @@
       </div>
     </div>
 
-    <div class="row mb-5 text-center p-3" style="border-radius: 10px; background-color: #eeeeee70;">
-      <div class="col-md-7">
-        <h1 style="color: #666;">Innovación y Automatización</h1>
+    <div class="container">
+      <div class="contact-form">
+        <h2>Innovación y Automatización</h2>
         <p>
           En <strong>PIXTI</strong>, creemos que la tecnología tiene el poder de transformar negocios al liberar tiempo,
           recursos y creatividad. Por eso, nos especializamos en desarrollar soluciones de innovación y automatización
@@ -136,12 +222,12 @@
     </div>
 
 
-    <div class="row mb-5 text-center p-3" style="border-radius: 10px; background-color: #eeeeee70;">
-      <div class="col-md-5">
+    <div class="container">
+      <div class="contact-form">
         <img src="imgs/servicios_kanban.png" alt="Kanban Board" style="max-width: 100%; height: auto;">
       </div>
       <div class="col-md-7">
-        <h1 style="color: #2F1C6A;">Consultoría en Gestión de Proyectos de TI</h1>
+        <h2>Consultoría en Gestión de Proyectos de TI</h2>
         <p>En <strong>PIXTI</strong>, te acompañamos a lo largo de cada etapa de tu proyecto tecnológico, utilizando
           metodologías ágiles como Scrum y Kanban para garantizar flexibilidad y resultados rápidos. Nos encargamos de
           planificar, gestionar recursos, y controlar presupuestos para que tu proyecto sea exitoso, cumpliendo plazos y
@@ -153,7 +239,7 @@
         </p>
       </div>
     </div>
-
+  </section>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/jquery-3.6.0.js"></script>
