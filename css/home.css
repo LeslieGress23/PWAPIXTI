@@ -16,12 +16,47 @@ h1 {
 	font-family: Arial, sans-serif;
 }
 
+/* Barra de navegación estática */
+.navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #fff;
+	font-family: Arial, sans-serif;
+	box-sizing: border-box;
+	z-index: 999;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	margin: 0; /* Asegúrate de que no haya margen */
+	padding: 10px 0;
+}
+
+.navbar-brand,
+.nav-link {
+	color: #000000 !important;
+	font-weight: bold;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+	color: #1113b0 !important;
+}
+
+.logo {
+	width: 50px;
+	height: auto;
+	margin-right: 15px;
+	vertical-align: middle;
+}
+
 /* Caja contenedora de la imagen */
 .caja {
 	position: relative;
 	display: inline-block;
 	width: 100vw;
-	overflow: hidden;
+	margin-top: 0;
+	padding-top: 60px; /* Ajusta según la altura del menú */
 }
 
 /* Imagen de fondo */
@@ -32,7 +67,6 @@ h1 {
 	background-position: center;
 	text-align: center;
 	filter: brightness(50%);
-	position: relative;
 }
 
 /* Contenedor de texto sobre la imagen */
@@ -60,7 +94,6 @@ h1 {
 	margin-top: 20px;
 	padding: 10px 20px;
 	background-color: #1113b0;
-	/* Color de fondo del botón */
 	color: #fff;
 	font-weight: bold;
 	text-decoration: none;
@@ -69,41 +102,8 @@ h1 {
 }
 
 .cont a:hover {
-	background-color: #1113b0;
-	/* Color al pasar el cursor */
+	background-color: #0f0067;
 }
-
-/* Estilos de la barra de navegación */
-.navbar {
-	background-color: #fff;
-	font-family: Arial, sans-serif;
-	width: 100%;
-	box-sizing: border-box;
-}
-
-.navbar-brand,
-.nav-link {
-	color: #000000 !important;
-	font-weight: bold;
-	font-size: 16px;
-	text-transform: uppercase;
-}
-
-.navbar-brand:hover,
-.nav-link:hover {
-	color: #1113b0 !important;
-	/* Color de enlace al pasar el cursor */
-}
-
-/* Logo de la barra de navegación */
-.logo {
-	width: 50px;
-	/* Ajusta el tamaño según necesites */
-	height: auto;
-	margin-right: 15px;
-	vertical-align: middle;
-}
-
 
 /* Estilos en dispositivos móviles */
 @media (min-width: 280px) and (max-width: 480px) {
@@ -116,57 +116,56 @@ h1 {
 		font-weight: 700;
 	}
 }
-/* Estilos para las generalidades */
+
+/* Otros estilos */
 .generalidades {
 	margin-top: 20px;
-  }
-  
-  .generalidades-title {
+}
+
+.generalidades-title {
 	text-align: center;
 	font-weight: bold;
 	font-size: 24px;
 	margin-bottom: 20px;
-  }
-  
-  .section {
+}
+
+.section {
 	margin-top: 10px;
 	display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .section img.icon-img {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.section img.icon-img {
 	width: 40px;
 	height: 40px;
 	margin-bottom: 10px;
-  }
-  
-  .section h5 {
+}
+
+.section h5 {
 	font-weight: bold;
 	margin-top: 10px;
-  }
-  
-  .section p {
+}
+
+.section p {
 	font-size: 14px;
 	color: #555;
-  }
-  
-  .row {
-	display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0;
 }
-  
-  .img-fluid {
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0;
+}
+
+.img-fluid {
 	border: 1px solid #ddd;
 	border-radius: 5px;
-  }
-  
+}
 
-/* Otros estilos de la página */
 .nameperfil {
 	color: #2F1C6A !important;
 }
@@ -237,40 +236,27 @@ em {
 	animation: loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
 }
 
-
 /*botón descarga*/
 .btn-custom {
 	background-color: #004aad;
-	/* Color de fondo */
 	color: white;
-	/* Color del texto */
 	border: none;
-	/* Sin bordes */
 	padding: 10px 20px;
-	/* Espaciado interno */
 	font-size: 16px;
-	/* Tamaño de fuente */
 	border-radius: 5px;
-	/* Bordes redondeados */
 	transition: background-color 0.3s ease;
-	/* Transición suave */
 }
 
 .btn-custom:hover {
 	background-color: #0f0067;
-	/* Color al pasar el mouse */
 	color: white;
 }
-
-
-
 
 @-webkit-keyframes loader-outter {
 	0% {
 		-webkit-transform: rotate(0deg);
 		transform: rotate(0deg);
 	}
-
 	100% {
 		-webkit-transform: rotate(360deg);
 		transform: rotate(360deg);
@@ -282,7 +268,6 @@ em {
 		-webkit-transform: rotate(0deg);
 		transform: rotate(0deg);
 	}
-
 	100% {
 		-webkit-transform: rotate(360deg);
 		transform: rotate(360deg);
@@ -294,7 +279,6 @@ em {
 		-webkit-transform: rotate(0deg);
 		transform: rotate(0deg);
 	}
-
 	100% {
 		-webkit-transform: rotate(-360deg);
 		transform: rotate(-360deg);
@@ -306,7 +290,6 @@ em {
 		-webkit-transform: rotate(0deg);
 		transform: rotate(0deg);
 	}
-
 	100% {
 		-webkit-transform: rotate(-360deg);
 		transform: rotate(-360deg);
