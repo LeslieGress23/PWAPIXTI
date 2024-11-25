@@ -311,3 +311,67 @@ em {
 ::-webkit-scrollbar-thumb:hover {
 	background: grey;
 }
+
+.menu {
+    background-color:#f9f9f9;
+    color: black;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.menu h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Estilos de las tarjetas */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.card a {
+    color: #555;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.card a:hover {
+    color: #000;
+    text-decoration: underline;
+}
