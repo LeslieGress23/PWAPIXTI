@@ -327,7 +327,7 @@ em {
 .card-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 90px;
     flex-wrap: wrap;
     padding: 20px;
 }
