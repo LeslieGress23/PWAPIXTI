@@ -1,268 +1,291 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta name="description"
+    content="Web Developer es un canal de Youtube que nace con el unico proposito de ayudar a la comunidad que esta en modo aprender de la mejor manera." />
+  <meta name="keywords" content="Canal de Youtube Web Developer Urian Viera" />
+  <meta name="author" content="Web Developer" />
+  <meta name="copyright" content="Web Developer" />
+  <meta name="language" content="es-CO" />
+
+  <title>PIXTI</title>
+  <link type="text/css" rel="shortcut icon" href="imgs/PIXTI.jpeg" />
+  <link rel="stylesheet" href="css/home.css">
+
+
+  <!--PWA-->
+  <link rel="manifest" href="./manifest.json">
+  <!---PWA--->
+
+  <!----METAS DE PWA-->
+  <meta name="theme-color" content="#2F3BA2">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="shortcut icon" type="image/png" href="./pwa/images/icons/icon-512x512.png">
+  <link rel="apple-touch-icon" href="./pwa/images/icons/icon-512x512.png">
+  <link rel="apple-touch-startup-image" href="./pwa/images/icons/icon-512x512.png">
+
+  <link rel="apple-touch-icon" href="./pwa/images/icons/icon-72x72.png" />
+  <link rel="apple-touch-icon" href="./pwa/images/icons/icon-96x96.png" />
+  <link rel="apple-touch-icon" href="./pwa/images/icons/icon-128x128.png" />
+  <link rel="apple-touch-icon" href="./pwa/images/icons/icon-144x144.png" />
+  <link rel="apple-touch-icon" href="./pwa/images/icons/icon-152x152.png" />
+  <link rel="apple-touch-icon" href="./pwa/images/icons/icon-192x192.png" />
+  <link rel="apple-touch-icon" href="./pwa/images/icons/icon-384x384.png" />
+  <link rel="apple-touch-icon" href="./pwa/images/icons/icon-512x512.png" />
+  <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .cont-servicios {
+      background-color: #fff;
+      padding: 20px;
+      width: 100%;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    .cont-servicios h2 {
+      text-align: center;
+      color: #333;
+    }
     
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-    <meta name="description" content="Web Developer es un canal de Youtube que nace con el unico proposito de ayudar a la comunidad que esta en modo aprender de la mejor manera." />
-    <meta name="keywords" content="Canal de Youtube Web Developer Urian Viera"/>
-    <meta name="author" content="Web Developer" />
-    <meta name="copyright" content="Web Developer" />
-    <meta name="language" content="es-CO"/>
-
-    <title>PIXTI</title>
-    <link type="text/css" rel="shortcut icon" href="imgs/PIXTI.jpeg"/>
-    <link rel="stylesheet" href="css/home.css">
-
-
-    <!--PWA-->
-    <link rel="manifest" href="./manifest.json"> 
-    <!---PWA--->
-
-    <!----METAS DE PWA-->
-    <meta name="theme-color" content="#2F3BA2">
-    <meta name="MobileOptimized" content="width">
-    <meta name="HandheldFriendly" content="true">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="shortcut icon" type="image/png" href="./pwa/images/icons/icon-512x512.png">
-    <link rel="apple-touch-icon" href="./pwa/images/icons/icon-512x512.png">
-    <link rel="apple-touch-startup-image" href="./pwa/images/icons/icon-512x512.png">
-
-    <link rel="apple-touch-icon" href="./pwa/images/icons/icon-72x72.png" />
-    <link rel="apple-touch-icon" href="./pwa/images/icons/icon-96x96.png" />
-    <link rel="apple-touch-icon" href="./pwa/images/icons/icon-128x128.png" />
-    <link rel="apple-touch-icon" href="./pwa/images/icons/icon-144x144.png" />
-    <link rel="apple-touch-icon" href="./pwa/images/icons/icon-152x152.png" />
-    <link rel="apple-touch-icon" href="./pwa/images/icons/icon-192x192.png" />
-    <link rel="apple-touch-icon" href="./pwa/images/icons/icon-384x384.png" />
-    <link rel="apple-touch-icon" href="./pwa/images/icons/icon-512x512.png" />
-    <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
-
-    <style>
-      .container {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          width: 100%;
-          padding: 20px;
-          max-width: 1200px;
-          margin: auto;
-      }
-  
-      .cont-servicios {
-          background-color: #fff;
-          padding: 20px;
-          width: 100%;
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-          border-radius: 10px;
-      }
-  
-      .cont-servicios h2 {
-          text-align: center;
-          color: #333;
-      }
-  
-
   </style>
 
 
-  </head>
-  <body>
-    <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <img src="imgs/PIXTI.jpeg" alt="Logo" class="logo">
-        <a class="navbar-brand" href="index.html">Inicio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link active" href="#nosotros">Conócenos</a></li>
-            <li class="nav-item"><a class="nav-link active" href="#acercade">Acerca de...</a></li>
-            <li class="nav-item"><a class="nav-link active" href="#servicios">Servicios</a></li>
-            <li class="nav-item"><a class="nav-link active" href="./productos.html">Productos</a></li>
-            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-          </ul>
-        </div>
+</head>
+
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <img src="imgs/PIXTI.jpeg" alt="Logo" class="logo">
+      <a class="navbar-brand" href="index.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#nosotros">Conócenos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#acercade">Acerca de...</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#productos">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
   <!--precarga de la pagina-->
   <div class="cargando">
-      <div class="loader-outter"></div>
-      <div class="loader-inner"></div>
+    <div class="loader-outter"></div>
+    <div class="loader-inner"></div>
   </div>
 
- 
-    <div class="caja">
-      <img src="imgs/imgfondo.jpeg" class="img-fluid resp_img" alt="">
-      <div class="cont">
-        <h1>PIXTI</h1>
-        <p>Empresa de desarrollo de software y servicios de TI</p>
-        <a href="#" class="button">Conócenos</a>
+
+  <div class="caja">
+    <img src="imgs/imgfondo.jpeg" class="img-fluid resp_img" alt="">
+    <div class="cont">
+      <h1>PIXTI</h1>
+      <p>Empresa de desarrollo de software y servicios de TI</p>
+      <a href="#" class="button">Conócenos</a>
+    </div>
+  </div>
+
+  <section class="menu">
+    <h1 class="text-center mt-5 mb-5">NOSOTROS SOMOS...</h1>
+    <div class="card-container" id="nosotros">
+      <div class="card">
+        <center> <img src="imgs/PIXTI.jpeg" alt="Empresa PIXTI"></center>
+        <h2>PIXTI</h2>
+        <p>Una empresa de desarrollo de software dedicada a crear soluciones tecnológicas innovadoras que transforman y
+          optimizan los negocios de nuestros clientes.</p>
+      </div>
+      <div class="card">
+        <center> <img src="imgs/c1.jpg" alt="Innovación"></center>
+        <h2>Innovación</h2>
+        <p>Nuestro equipo está conformado por desarrolladores, diseñadores y estrategas altamente capacitados que
+          comparten una visión común: construir software de alta calidad.</p>
+
+      </div>
+      <div class="card">
+        <center> <img src="imgs/c2.jpg" alt="Eficiencia"></center>
+        <h2>Objetivo</h2>
+        <p>La satisfacción del cliente es nuestra prioridad. Escuchamos atentamente, comunicamos con transparencia y nos
+          adaptamos rápidamente para superar las expectativas de cada proyecto. </p>
+
+      </div>
+      <div class="card">
+        <center> <img src="imgs/c3.png" alt="Trabajamos"></center>
+        <h2>Proyectos</h2>
+        <p>Nos comprometemos a prácticas de desarrollo éticas y sostenibles, y buscamos contribuir positivamente a la
+          comunidad mediante proyectos que generen impacto social y apoyen el bienestar general.
+        </p>
+      </div>
+    </div>
+       
+      
+  </section>
+
+
+  <!-- Contenido principal -->
+  <div class="container mt-4 generalidades" id="acercade">
+    <h2 class="generalidades-title"></h2>
+    <div class="row mt-4">
+      <!-- Imagen grande a la izquierda -->
+      <div class="col-md-6">
+        <img src="imgs/generalidades.jpg" alt="Generalidades" class="img-fluid">
+      </div>
+      <!-- Sección derecha con bloques -->
+      <div class="col-md-6">
+        <div class="row">
+          <!-- Bloque de Misión -->
+          <div class="col-6 text-center section">
+            <img src="imgs/mision.png" class="icon-img" alt="Misión">
+            <h5>Misión</h5>
+            <p>PIXTI desarrolla software y servicios TI para impulsar innovación digital, optimizar procesos y fomentar
+              el crecimiento sostenible de sus clientes.</p>
+          </div>
+          <!-- Bloque de Visión -->
+          <div class="col-6 text-center section">
+            <img src="imgs/vision.png" class="icon-img" alt="Visión">
+            <h5>Visión</h5>
+            <p>Lideramos en tecnología con innovaciones que optimizan negocios, contribuyendo al progreso sostenible con
+              excelencia y eficiencia.</p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <!-- Bloque de Valores -->
+          <div class="col-6 text-center section">
+            <img src="imgs/valores.png" class="icon-img" alt="Valores">
+            <h5>Valores</h5>
+            <p>PIXTI, se basa en los siguientes valores: confiabilidad, seguridad, integridad, calidad y
+              responsabilidad.</p>
+          </div>
+          <!-- Bloque de Lema -->
+          <div class="col-6 text-center section">
+            <img src="imgs/lema.png" class="icon-img" alt="Lema">
+            <h5>Lema</h5>
+            <p>"Transformando Desafíos en soluciones digitales".
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="servicios">
+    <div>
+      <h1 class="text-center mt-5 mb-5">NUESTROS SERVICIOS</h1>
+    </div>
+
+
+    <div class="container">
+      <div class="cont-servicios">
+        <h2>Desarrollo de Software y Soluciones Personalizadas</h2>
+        <p>
+          En <strong>PIXTI</strong>, creemos que cada idea tiene el potencial de transformarse en una solución poderosa.
+          Nuestro objetivo es dar vida a tus proyectos mediante tecnología personalizada que no sólo funciona, sino que
+          inspira. Somos una empresa apasionada, comprometida con la excelencia y enfocada en crear software que marque
+          una diferencia real en tu negocio.
+        </p>
+        <ul style="list-style-position: inside; padding-left: 0;">
+          <li>
+            <strong>Apps móviles y web</strong> con diseño moderno y funcionalidades avanzadas.
+          </li>
+          <li>
+            <strong>Automatización de procesos</strong> para eliminar tareas repetitivas.
+          </li>
+          <li>
+            <strong>Soluciones a la medida</strong>, diseñadas específicamente para tus necesidades.
+          </li>
+        </ul>
+        <img src="imgs/servicios_desarrollo.png" class="img-fluid" alt="movil" style="max-width: 100%; height: auto;">
       </div>
     </div>
 
-    <section class="menu">
-      <h1 class="text-center mt-5 mb-5">NOSOTROS SOMOS...</h1>
-      <div class="card-container" id="nosotros">
-          <div class="card">
-            <center> <img src="imgs/PIXTI.jpeg" alt="Empresa PIXTI"></center> 
-                  <h2>PIXTI</h2>
-                  <p>Una empresa de desarrollo de software dedicada a crear soluciones tecnológicas innovadoras que transforman y optimizan los negocios de nuestros clientes.</p>
-          </div>
-          <div class="card">
-             <center> <img src="imgs/c1.jpg" alt="Innovación"></center>
-              <h2>Innovación</h2>
-              <p>Nuestro equipo está conformado por desarrolladores, diseñadores y estrategas altamente capacitados que comparten una visión común: construir software de alta calidad.</p>
-              
-          </div>
-          <div class="card">
-          <center> <img src="imgs/c2.jpg" alt="Eficiencia"></center>
-              <h2>Objetivo</h2>
-              <p>La satisfacción del cliente es nuestra prioridad. Escuchamos atentamente, comunicamos con transparencia y nos adaptamos rápidamente para superar las expectativas de cada proyecto. </p>
-             
-          </div>
-          <div class="card">
-          <center>  <img src="imgs/c3.png" alt="Trabajamos"></center>
-              <h2>Proyectos</h2>
-              <p>Nos comprometemos a prácticas de desarrollo éticas y sostenibles, y buscamos contribuir positivamente a la comunidad mediante proyectos que generen impacto social y apoyen el bienestar general.
-              </p>
-          </div>
+    <div class="container">
+      <div class="cont-servicios">
+        <h2>Innovación y Automatización</h2>
+        <p>
+          En <strong>PIXTI</strong>, creemos que la tecnología tiene el poder de transformar negocios al liberar tiempo,
+          recursos y creatividad. Por eso, nos especializamos en desarrollar soluciones de innovación y automatización
+          que no solo optimizan tus procesos, sino que también te preparan para el futuro.
+        </p>
       </div>
-      
-  </section>
-
-  
-    <!-- Contenido principal -->
-    <div class="container mt-4 generalidades" id="acercade">
-      <h2 class="generalidades-title"></h2>
-      <div class="row mt-4">
-        <!-- Imagen grande a la izquierda -->
-        <div class="col-md-6">
-          <img src="imgs/generalidades.jpg" alt="Generalidades" class="img-fluid">
-        </div>
-        <!-- Sección derecha con bloques -->
-        <div class="col-md-6">
-          <div class="row">
-            <!-- Bloque de Misión -->
-            <div class="col-6 text-center section">
-              <img src="imgs/mision.png" class="icon-img" alt="Misión">
-              <h5>Misión</h5>
-              <p>PIXTI desarrolla software y servicios TI para impulsar innovación digital, optimizar procesos y fomentar el crecimiento sostenible de sus clientes.</p>
-            </div>
-            <!-- Bloque de Visión -->
-            <div class="col-6 text-center section">
-              <img src="imgs/vision.png" class="icon-img" alt="Visión">
-              <h5>Visión</h5>
-              <p>Lideramos en tecnología con innovaciones que optimizan negocios, contribuyendo al progreso sostenible con excelencia y eficiencia.</p>
-            </div>
-          </div>
-          <div class="row mt-3">
-            <!-- Bloque de Valores -->
-            <div class="col-6 text-center section">
-              <img src="imgs/valores.png" class="icon-img" alt="Valores">
-              <h5>Valores</h5>
-              <p>PIXTI, se basa en los siguientes valores: confiabilidad, seguridad, integridad, calidad y responsabilidad.</p>
-            </div>
-            <!-- Bloque de Lema -->
-            <div class="col-6 text-center section">
-              <img src="imgs/lema.png" class="icon-img" alt="Lema">
-              <h5>Lema</h5>
-              <p>"Transformando Desafíos en soluciones digitales".
-              </p>
-            </div>
-          </div>
-        </div>
+      <div class="col-md-5">
+        <p>
+          <img src="imgs/orientation.png" class="img-fluid" alt="movil" style="max-width: 100%; height: auto;">
+        </p>
       </div>
     </div>
 
-    <section id="servicios">
-      <div>
-            <h1 class="text-center mt-5 mb-5">NUESTROS SERVICIOS</h1>
-        </div>
-    
-    
-        <div class="container">
-          <div class="cont-servicios">
-            <h2>Desarrollo de Software y Soluciones Personalizadas</h2>
-            <p>
-              En <strong>PIXTI</strong>, creemos que cada idea tiene el potencial de transformarse en una solución poderosa.
-              Nuestro objetivo es dar vida a tus proyectos mediante tecnología personalizada que no sólo funciona, sino que
-              inspira. Somos una empresa apasionada, comprometida con la excelencia y enfocada en crear software que marque
-              una diferencia real en tu negocio.
-            </p>
-            <ul style="list-style-position: inside; padding-left: 0;">
-              <li>
-                <strong>Apps móviles y web</strong> con diseño moderno y funcionalidades avanzadas.
-              </li>
-              <li>
-                <strong>Automatización de procesos</strong> para eliminar tareas repetitivas.
-              </li>
-              <li>
-                <strong>Soluciones a la medida</strong>, diseñadas específicamente para tus necesidades.
-              </li>
-            </ul>
-            <img src="imgs/servicios_desarrollo.png" class="img-fluid"  alt="movil" style="max-width: 100%; height: auto;">
-          </div>
-        </div>
-    
-        <div class="container">
-          <div class="cont-servicios">
-            <h2>Innovación y Automatización</h2>
-            <p>
-              En <strong>PIXTI</strong>, creemos que la tecnología tiene el poder de transformar negocios al liberar tiempo,
-              recursos y creatividad. Por eso, nos especializamos en desarrollar soluciones de innovación y automatización
-              que no solo optimizan tus procesos, sino que también te preparan para el futuro.
-            </p>
-          </div>
-          <div class="col-md-5">
-            <p>
-              <img src="imgs/orientation.png" class="img-fluid"  alt="movil" style="max-width: 100%; height: auto;">
-            </p>
-          </div>
-        </div>
-    
-    
-        <div class="container">
-          <div class="cont-servicios">
-            <img src="imgs/servicios_kanban.png" alt="Kanban Board" style="max-width: 100%; height: auto;">
-          </div>
-          <div class="col-md-7">
-            <h2>Consultoría en Gestión de Proyectos de TI</h2>
-            <p>En <strong>PIXTI</strong>, te acompañamos a lo largo de cada etapa de tu proyecto tecnológico, utilizando
-              metodologías ágiles como Scrum y Kanban para garantizar flexibilidad y resultados rápidos. Nos encargamos de
-              planificar, gestionar recursos, y controlar presupuestos para que tu proyecto sea exitoso, cumpliendo plazos y
-              manteniendo la calidad.
-              <br><br>
-              Además, te apoyamos en la adopción de nuevas tecnologías, asegurando una transición sin fricciones. En
-              <strong>PIXTI</strong>, creemos en la comunicación abierta y transparente, trabajando codo a codo contigo para
-              que tu visión se haga realidad. ¡Tu éxito es nuestro compromiso!
-            </p>
-          </div>
-        </div>
-      </section>
 
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/jquery-3.6.0.js"></script>
-    <script src="./regist_serviceWorker.js"></script> 
-    <script>
-      $(function(){
-    //Precarga de la pagina se ejecuta solo una vez
-    setTimeout(
-        ()=>{
-            $(".cargando").hide(); 
-         } , 50
-     );
-     });
-    </script>
+    <div class="container">
+      <div class="cont-servicios">
+        <img src="imgs/servicios_kanban.png" alt="Kanban Board" style="max-width: 100%; height: auto;">
+      </div>
+      <div class="col-md-7">
+        <h2>Consultoría en Gestión de Proyectos de TI</h2>
+        <p>En <strong>PIXTI</strong>, te acompañamos a lo largo de cada etapa de tu proyecto tecnológico, utilizando
+          metodologías ágiles como Scrum y Kanban para garantizar flexibilidad y resultados rápidos. Nos encargamos de
+          planificar, gestionar recursos, y controlar presupuestos para que tu proyecto sea exitoso, cumpliendo plazos y
+          manteniendo la calidad.
+          <br><br>
+          Además, te apoyamos en la adopción de nuevas tecnologías, asegurando una transición sin fricciones. En
+          <strong>PIXTI</strong>, creemos en la comunicación abierta y transparente, trabajando codo a codo contigo para
+          que tu visión se haga realidad. ¡Tu éxito es nuestro compromiso!
+        </p>
+      </div>
+    </div>
+  </section>
 
-  
-    </body>
+  <!-- BITT -->
+  <section id="productos">
+    <h1 class="text-center mt-5 mb-5">PRODUCTOS</h1>
+    <header class="text-white text-center py-5" style="background-color: #004aad; color: #fff;">
+      <div class="container">
+        <img src="imgs/prod_bitt-logo.png" alt="Bitt logo" style="width: 10vw; height: auto;">
+        <h1 class="text-center mt-5 mb-5">BITT - Reconociendo billetes, mejorando vidas</h1>
+      </div>
+      <a href="./productos.html" class="btn-bitt" role="button">Conoce más</a>
+    </header>
+  </section>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/jquery-3.6.0.js"></script>
+  <script src="./regist_serviceWorker.js"></script>
+  <script>
+    $(function () {
+      //Precarga de la pagina se ejecuta solo una vez
+      setTimeout(
+        () => {
+          $(".cargando").hide();
+        }, 50
+      );
+    });
+  </script>
+
+
+</body>
 
 </html>
