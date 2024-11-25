@@ -42,6 +42,34 @@
     <link rel="apple-touch-icon" href="./pwa/images/icons/icon-512x512.png" />
     <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
 
+    <style>
+      .container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          padding: 20px;
+          max-width: 1200px;
+          margin: auto;
+      }
+  
+      .cont-servicios {
+          background-color: #fff;
+          padding: 20px;
+          width: 100%;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
+      }
+  
+      .cont-servicios h2 {
+          text-align: center;
+          color: #333;
+      }
+  
+
+  </style>
+
+
   </head>
   <body>
     <!-- Barra de navegación -->
@@ -55,7 +83,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item"><a class="nav-link active" href="conocenos.html">Conócenos</a></li>
-            <li class="nav-item"><a class="nav-link active" href="#acercade">Acerca de ...</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#acercade">Acerca de...</a></li>
             <li class="nav-item"><a class="nav-link active" href="#servicios">Servicios</a></li>
             <li class="nav-item"><a class="nav-link active" href="./productos.html">Productos</a></li>
             <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
@@ -125,18 +153,14 @@
     </div>
 
     <section id="servicios">
-      <div class="container mt-5 mb-5">
-        <div class="row mb-5">
-          <div class="col-md-12">
+      <div>
             <h1 class="text-center mt-5 mb-5">NUESTROS SERVICIOS</h1>
-    
-          </div>
         </div>
     
     
-        <div class="row mb-5 text-center p-3" style="border-radius: 10px; background-color: #f1f1f1;">
-          <div class="col-md-12">
-            <h1 style="color: #555;">Desarrollo de Software y Soluciones Personalizadas</h1>
+        <div class="container">
+          <div class="cont-servicios">
+            <h2>Desarrollo de Software y Soluciones Personalizadas</h2>
             <p>
               En <strong>PIXTI</strong>, creemos que cada idea tiene el potencial de transformarse en una solución poderosa.
               Nuestro objetivo es dar vida a tus proyectos mediante tecnología personalizada que no sólo funciona, sino que
@@ -158,9 +182,9 @@
           </div>
         </div>
     
-        <div class="row mb-5 text-center p-3" style="border-radius: 10px; background-color: #eeeeee70;">
-          <div class="col-md-7">
-            <h1 style="color: #666;">Innovación y Automatización</h1>
+        <div class="container">
+          <div class="cont-servicios">
+            <h2>Innovación y Automatización</h2>
             <p>
               En <strong>PIXTI</strong>, creemos que la tecnología tiene el poder de transformar negocios al liberar tiempo,
               recursos y creatividad. Por eso, nos especializamos en desarrollar soluciones de innovación y automatización
@@ -175,12 +199,12 @@
         </div>
     
     
-        <div class="row mb-5 text-center p-3" style="border-radius: 10px; background-color: #eeeeee70;">
-          <div class="col-md-5">
+        <div class="container">
+          <div class="cont-servicios">
             <img src="imgs/servicios_kanban.png" alt="Kanban Board" style="max-width: 100%; height: auto;">
           </div>
           <div class="col-md-7">
-            <h1 style="color: #2F1C6A;">Consultoría en Gestión de Proyectos de TI</h1>
+            <h2>Consultoría en Gestión de Proyectos de TI</h2>
             <p>En <strong>PIXTI</strong>, te acompañamos a lo largo de cada etapa de tu proyecto tecnológico, utilizando
               metodologías ágiles como Scrum y Kanban para garantizar flexibilidad y resultados rápidos. Nos encargamos de
               planificar, gestionar recursos, y controlar presupuestos para que tu proyecto sea exitoso, cumpliendo plazos y
