@@ -450,3 +450,92 @@ em {
 	color: #000;
 	text-decoration: underline;
 }
+
+/* Contenedor principal: formulario + imágenes */
+.contact-container {
+	display: flex;
+	justify-content: space-between; /* Distribuir espacio entre los elementos */
+	align-items: flex-start; /* Alineación superior */
+	gap: 20px; /* Espacio entre los elementos */
+	max-width: 1200px;
+	margin: 0 auto; /* Centrar el contenedor */
+	padding: 20px;
+  }
+  
+  /* Formulario */
+  form {
+	flex: 1; /* Ocupa más espacio que las imágenes */
+	max-width: 600px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+  }
+  
+  /* Inputs y textarea del formulario */
+  form input, form textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+  }
+  
+  /* Botón del formulario */
+  form button {
+	width: 100%;
+	padding: 12px;
+	background-color: #1113b0;
+	color: white;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  /* Información de contacto */
+  .contact-info {
+	display: flex;
+	flex-direction: column; /* Alinear Gmail y la imagen en columna */
+	gap: 10px;
+	align-items: center; /* Centrar contenido dentro del div */
+	flex: 0.5; /* Menor ancho que el formulario */
+  }
+  
+  /* Estilo para la imagen de Gmail y texto */
+  .gmail-info {
+	display: flex;
+	align-items: center;
+	gap: 100px;
+  }
+  
+  .gmail-info img {
+	width: 200px;
+	height: 200px;
+  }
+  
+  .gmail-info p {
+	font-size: 16px;
+  }
+  
+  /* Imagen principal */
+  .main-image img {
+	max-width: 50%;
+	height: auto;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+	.contact-container {
+	  flex-direction: column; /* Cambiar a una columna en pantallas pequeñas */
+	}
+  
+	.contact-info {
+	  flex-direction: column;
+	  align-items: center;
+	}
+  }
+  

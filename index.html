@@ -9,10 +9,10 @@
 
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <meta name="description"
-    content="Web Developer es un canal de Youtube que nace con el unico proposito de ayudar a la comunidad que esta en modo aprender de la mejor manera." />
-  <meta name="keywords" content="Canal de Youtube Web Developer Urian Viera" />
-  <meta name="author" content="Web Developer" />
-  <meta name="copyright" content="Web Developer" />
+    content="ixti es una consultoría especializada en el desarrollo de aplicaciones y páginas web innovadoras, brindando soluciones tecnológicas a medida para empresas y negocios." />
+  <meta name="keywords" content="Pixti, desarrollo de aplicaciones, desarrollo web, soluciones tecnológicas, consultoría tecnológica, diseño web profesional, desarrollo de software" />
+  <meta name="author" content="PIXTI" />
+  <meta name="copyright" content="PIXTI" />
   <meta name="language" content="es-CO" />
 
   <title>PIXTI</title>
@@ -89,7 +89,7 @@
           <li class="nav-item"><a class="nav-link active" href="#acercade">Acerca de...</a></li>
           <li class="nav-item"><a class="nav-link active" href="#servicios">Servicios</a></li>
           <li class="nav-item"><a class="nav-link active" href="#productos">Productos</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
         </ul>
       </div>
     </div>
@@ -284,6 +284,71 @@
       );
     });
   </script>
+
+
+<section id="contacto">
+  
+</section>
+
+
+<div class="contact-container">
+  <form id="contact-form">
+  
+      
+    <center><h1>Contacto</h1></center> 
+    
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div class="contact-info">
+    <!-- Imagen de Gmail -->
+   
+    <!-- Imagen principal (a la derecha) -->
+    <div class="main-image">
+   <center>  <img src="imgs/pixtiC.png" alt="Imagen PIxti"></center> 
+   <center><div class="gmail-info">
+      <img src="imgs/gmail.png" alt="Gmail">
+      <p>pixti62@gmail.com</p>
+    </div>
+    
+  </center> 
+    </div>
+  </div>
+</div>
+
+<!-- Script para redirigir al usuario a WhatsApp -->
+<script>
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+      e.preventDefault(); // Evitar que el formulario se envíe de la forma tradicional
+
+      // Recoger los datos del formulario
+      var nombre = document.getElementById("nombre").value;
+      var email = document.getElementById("email").value;
+      var mensaje = document.getElementById("mensaje").value;
+
+      // Crear el mensaje que se enviará por WhatsApp
+      var mensajeWhatsApp = `Nombre: ${nombre}%0AEmail: ${email}%0AMensaje: ${mensaje}`;
+
+      // Número de teléfono de WhatsApp
+      var numeroWhatsApp = "527731587079"; 
+      // Crear el enlace de WhatsApp
+      var enlaceWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensajeWhatsApp}`;
+
+      // Redirigir al enlace de WhatsApp
+      window.location.href = enlaceWhatsApp;
+  });
+</script>
+
+<script src="js/bootstrap.bundle.min.js"></script>
 
 
 </body>
